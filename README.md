@@ -1,11 +1,11 @@
 <div align="center">
 
 [![Documentation Status](https://readthedocs.org/projects/mdformat/badge/?version=latest)](https://mdformat.readthedocs.io/en/latest/?badge=latest)
-[![Build Status](https://github.com/hukkin/mdformat/actions/workflows/tests.yaml/badge.svg?branch=master)](https://github.com/hukkin/mdformat/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush)
-[![codecov.io](https://codecov.io/gh/hukkin/mdformat/branch/master/graph/badge.svg)](https://codecov.io/gh/hukkin/mdformat)
+[![Build Status](https://github.com/Unity-Billal-mesloub/mdformat/actions/workflows/tests.yaml/badge.svg?branch=main)](https://github.com/Unity-Billal-mesloub/mdformat/actions?query=workflow%3ATests+branch%3Amain+event%3Apush)
+[![codecov.io](https://codecov.io/gh/hukkin/mdformat/branch/main/graph/badge.svg)](https://codecov.io/gh/hukkin/mdformat)
 [![PyPI version](https://img.shields.io/pypi/v/mdformat)](https://pypi.org/project/mdformat)
 
-# ![mdformat](https://raw.githubusercontent.com/hukkin/mdformat/master/docs/_static/logo.svg)
+# ![mdformat](https://raw.githubusercontent.com/Unity-Billal-mesloub/mdformat/main/docs/static/logo.svg)
 
 > CommonMark compliant Markdown formatter
 
@@ -144,7 +144,7 @@ angle brackets, square brackets, parentheses, hash character — characters that
 Mdformat often resorts to backslash escaping these characters to ensure its formatting changes never alter a rendered document.
 
 Additionally some engines, namely MkDocs,
-[do not support](https://github.com/mkdocs/mkdocs/issues/1835) CommonMark to begin with,
+[do not support](https://github.com/Unity-Billal-mesloub/mkdocs/issues) CommonMark to begin with,
 so incompatibilities are unavoidable.
 
 Luckily mdformat is extensible by plugins.
@@ -156,24 +156,24 @@ You may also want to consider a documentation generator that adheres to CommonMa
 e.g. [mdBook](https://rust-lang.github.io/mdBook/)
 or [Sphinx with Markdown](https://www.sphinx-doc.org/en/master/usage/markdown.html).
 
-### Why not use [Prettier](https://github.com/prettier/prettier) instead?
+### Why not use [Prettier](https://github.com/Unity-Billal-mesloub/prettier) instead?
 
 Mdformat is pure Python code!
 Python is pre-installed on macOS and virtually any Linux distribution,
 meaning that typically little to no additional installations are required to run mdformat.
 This argument also holds true when using together with
-[pre-commit](https://github.com/pre-commit/pre-commit) (also Python).
+[pre-commit](https://github.com/Unity-Billal-mesloub/pre-commit) (also Python).
 Prettier on the other hand requires Node.js/npm.
 
 Prettier suffers from
-[numerous](https://github.com/prettier/prettier/issues?q=is%3Aopen+label%3Alang%3Amarkdown+label%3Atype%3Abug+)
+[numerous](https://github.com/Unity-Billal-mesloub/prettier/issues?q=is%3Aopen+label%3Alang%3Amarkdown+label%3Atype%3Abug+)
 bugs,
 many of which cause changes in Markdown AST and rendered HTML.
 Many of these bugs are a consequence of using
-[`remark-parse`](https://github.com/remarkjs/remark/tree/main/packages/remark-parse)
+[`remark-parse`](https://github.com/Unity-Billal-mesloub/remark/tree/main/packages/remark-parse)
 v8.x as Markdown parser which,
 according to the author themselves,
-is [inferior to markdown-it](https://github.com/remarkjs/remark/issues/75#issuecomment-143532326) used by mdformat.
+is [inferior to markdown-it](https://github.com/Unity-Billal-mesloub/remark/issues/) used by mdformat.
 `remark-parse` v9.x is advertised as CommonMark compliant
 and presumably would fix many of the issues,
 but is not used by Prettier (v3.3.3) yet.
@@ -185,7 +185,7 @@ This can be a disadvantage in many environments,
 one example being size optimized Docker images.
 
 Mdformat's parser extension plugin API allows not only customization of the Markdown specification in use,
-but also advanced features like [automatic table of contents generation](https://github.com/hukkin/mdformat-toc).
+but also advanced features like [automatic table of contents generation](https://github.com/Unity-Billal-mesloub/mdformat-toc).
 Also provided is a code formatter plugin API enabling integration of embedded code formatting for any programming language.
 
 ### What's wrong with the mdformat logo? It renders incorrectly and is just terrible in general.
